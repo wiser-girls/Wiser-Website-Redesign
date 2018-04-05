@@ -1,21 +1,36 @@
 @charset 'utf-8';
+// @import "custom_settings";
+@import "~bootstrap/scss/bootstrap";
 
-@import 'variables';
-@import 'mixins';
-@import 'utilities';
-@import 'fonts';
+// // Required
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/variables";
+// @import "~bootstrap/scss/mixins";
+
+// // Optional
+// @import "~bootstrap/scss/reboot";
+// @import "~bootstrap/scss/type";
+// @import "~bootstrap/scss/images";
+// @import "~bootstrap/scss/code";
+// @import "~bootstrap/scss/grid";
+
+
+// @import 'variables';
+// @import 'mixins';
+// @import 'utilities';
+// @import 'fonts';
 
 
 
-// Import layout / global styles
-@import 'layout/page_header';
-@import 'layout/page_content';
-@import 'layout/page_footer';
+// // Import layout / global styles
+// @import 'layout/page_header';
+// @import 'layout/page_content';
+// @import 'layout/page_footer';
 
-// Import additional elements or project specific styles
-@import 'elements/blockquotes';
-@import 'elements/bg_video';
-@import 'elements/tab_collapse';
+// // Import additional elements or project specific styles
+// @import 'elements/blockquotes';
+// @import 'elements/bg_video';
+// @import 'elements/tab_collapse';
 
-// Animations
-@import 'animations';
+// // Animations
+// @import 'animations';

@@ -1,0 +1,59 @@
+// Color Palette TODO - Needs to adjust.
+// -------------------------
+
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$blue:    #25b0e8;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #f5C938;
+$green:   #87a63e;
+$teal:    #20c997 !default;
+$cyan:    #7dd0e8 !default;
+
+$primary:       $blue;
+$secondary:     #23405e;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$body-bg:               $white !default;
+$body-color:            #2e423f;
+
+
+$font-family:           'Encode Sans', sans-serif;
+
+
+$border-radius:           0rem;
+
+// Media Queries
+$screen-sm-min:           576px;
+$screen-md-min:           768px;
+$screen-lg-min:           992px;
+$screen-xl-min:           1200px;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+$base-line-height:		32px; // For use with standardizing sizes
