@@ -24,10 +24,10 @@ collections:
 # Build settings
 safe: false
 source: src
-exclude: ["_assets"]
+exclude: ["node_modules"]
 
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag

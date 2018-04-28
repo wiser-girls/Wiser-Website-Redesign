@@ -2,39 +2,19 @@ const path = require('path');
 
 const config = {
   entry: {
-    main: './webpack/js/main.js',
-    styles: ['./webpack/scss/main.scss']
+    main: './webpack/js/main.js'
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      },
-      {
-        test: /\.scss$/,
         use: [
           {
-            loader: 'file-loader',
-            options: {
-              name: '[name].css',
-              outputPath: 'assets/css/'
+            loader: "babel-loader",
+            query: {
+              presets: ["react", "es2015"]
             }
-          },
-          {
-            loader: 'extract-loader'
-          },
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'postcss-loader'
-          },
-          {
-            loader: 'sass-loader'
           }
         ]
       }
