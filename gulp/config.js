@@ -9,16 +9,6 @@ var productionAssets  = 'build/production/assets';
 var shopifyTheme      = 'shopify/theme';
 
 module.exports = {
-  bower: {
-    debugging: true,
-    includeDev: true,
-    dest: srcAssets + '/vendor',
-    paths: {
-      bowerDirectory: 'bower_components',
-      bowerrc: './.bowerrc',
-      bowerJson: './bower.json'
-    }
-  },
   browsersync: {
     development: {
       server: {

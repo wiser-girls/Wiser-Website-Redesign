@@ -8,14 +8,14 @@ gulp.task('build:production', function(callback) {
   runSequence('delete', 'jekyll:production',
   [
     'sass',
-    'scripts',
+    // 'scripts',
     'images',
     'copy:fonts'
   ],
   'base64',
   [
     'optimize:css',
-    'optimize:js',
+    // 'optimize:js',
     'optimize:images',
     'copy:fonts:production'
   ],
