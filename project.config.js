@@ -1,4 +1,5 @@
 const path        = require('path');
+const webpack     = require('webpack');
 const clientName  = '<Client Name>';
 const src         = 'src';
 const dest        = '_site';
@@ -10,7 +11,7 @@ module.exports = {
     imagemin: true,
     sass:     true,
     jekyll:   true,
-    eslint:   true,
+    // eslint:   true,
     watch:    true,
     // browsersync: true,
   },
@@ -112,14 +113,24 @@ module.exports = {
           exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
-            query: {
-              presets: ["react", "es2015"]
+            options: {
+              babelrc: true
             },
           }
         }
       ],
     },
-    plugins: [],
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+        Popper: ['popper.js', 'default'],
+        // In case you want to import plugins individually, you must also require them here:
+        // Util: "exports-loader?Util!bootstrap/js/dist/util",
+        // Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown",
+      })
+    ],
   },
 
   eslintLoader: {

@@ -1,15 +1,13 @@
-Client Name
-================
+#Project Template#
 
-##Getting Started
+This project uses Gulp, Webpack, Jekyll, React
+
+##Getting Started##
 1. Install Bundler: `gem install bundler`
 2. Install dependencies: `bundle install`
 3. Install Node packages: `npm install`
 
-##Adding Angular Application
-1. Use angular-cli to create new application and pass in the appropriate prefix: `ng new <app-name> --prefix <client prefix>`
-
-##Daily Startup
+##Daily Startup##
 1. `cd` to project directory
 2. Start environment: `npm start`
 3. Navigate to [http://localhost:9999/](http://localhost:9999/)
@@ -17,7 +15,7 @@ Client Name
 
 ============
 
-###Mirror this template:
+###Mirror this template:###
 New repository must be created prior
 
 https://help.github.com/articles/duplicating-a-repository/

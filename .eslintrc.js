@@ -2,7 +2,8 @@ module.exports = {
   'extends': ['eslint:recommended', 'google', 'plugin:react/recommended'],
   'env': {
     // For more environments, see here: http://eslint.org/docs/user-guide/configuring.html#specifying-environments
-    'browser': true
+    'browser': true,
+    "jquery": true,
   },
   "parser": "babel-eslint",
   'rules': {
