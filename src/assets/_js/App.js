@@ -3,8 +3,12 @@ import ReactDOM from 'react-dom';
 
 const App = () => {
   return (
-    <div>
-      <p>React here!</p>
+    <div className="container">
+      <div className="row">
+        <div className="col">
+          <h3>React Example</h3>
+        </div>
+      </div>
     </div>
   );
 };
