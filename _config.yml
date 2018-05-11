@@ -2,8 +2,8 @@
 title: Client Name
 email: dev@ocupop.com
 description: ''
-url: "http://client_url"
-permalink: /:title
+url: "http://client_url.com"
+permalink: pretty
 analytics_code: UA-000000000-1 # accessible via dev@ocupop.com
 
 # Collections
@@ -11,7 +11,7 @@ collections:
   examples:
     output: true
     layout: default
-    permalink: /examples/:path
+    permalink: /examples/:path/
 
 # defaults:
 #   - 
@@ -24,7 +24,6 @@ collections:
 # Build settings
 safe: false
 source: src
-exclude: ["node_modules"]
 
 
 plugins:
