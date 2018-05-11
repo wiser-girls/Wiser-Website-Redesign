@@ -1,7 +1,4 @@
-import App from "./App";
-
-console.log("Your Mom's loaded");
-
+import App from './App';
 // $(function() {
-  
+  console.log('Your loaded');
 // });

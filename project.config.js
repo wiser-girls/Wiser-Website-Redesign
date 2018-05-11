@@ -6,14 +6,13 @@ const assets      = 'src/assets';
 
 module.exports = {
   tasks: {
-    webpack:     true,
-    imagemin:    true,
-    sass:       true,
-    jekyll:     true,
-    // eslint:      true,
-
+    webpack:  true,
+    imagemin: true,
+    sass:     true,
+    jekyll:   true,
+    eslint:   true,
+    watch:    true,
     // browsersync: true,
-    watch:      true,
   },
 
   assets: assets,
@@ -97,7 +96,7 @@ module.exports = {
   },
 
   js: {
-    src: assets + '/_js/**/*.*',
+    src: assets + '/_js/**/*.js',
     dest: assets + '/js',
     entry: [
       assets + '/_js/main.js',
