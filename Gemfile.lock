@@ -8,17 +8,13 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    eventmachine (1.2.5)
+    eventmachine (1.2.7)
     ffi (1.9.23)
-    fontcustom (2.0.0)
-      json (~> 1.4)
-      listen (>= 1.0, < 4.0)
-      thor (~> 0.14)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    jekyll (3.7.3)
+    jekyll (3.8.1)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -37,9 +33,9 @@ GEM
       jekyll
     jekyll-feed (0.9.3)
       jekyll (~> 3.3)
-    jekyll-lunr-js-search (3.2.0)
-      json (~> 1.8)
-      nokogiri (~> 1.6)
+    jekyll-lunr-js-search (3.3.0)
+      json (~> 2.0)
+      nokogiri (~> 1.7)
       therubyracer (~> 0.12)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
@@ -49,7 +45,7 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (2.0.0)
       listen (~> 3.0)
-    json (1.8.6)
+    json (2.1.0)
     kramdown (1.16.2)
     libv8 (3.16.14.19)
     liquid (4.0.0)
@@ -84,13 +80,11 @@ GEM
     therubyracer (0.12.3)
       libv8 (~> 3.16.14.15)
       ref
-    thor (0.20.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  fontcustom
   jekyll
   jekyll-archives
   jekyll-contentblocks
@@ -103,4 +97,4 @@ DEPENDENCIES
   scss_lint
 
 BUNDLED WITH
-   1.15.4
+   1.16.1
