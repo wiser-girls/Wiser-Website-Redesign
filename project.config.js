@@ -100,6 +100,7 @@ module.exports = {
     src: assets + '/_js/**/*.js',
     dest: assets + '/js',
     entry: [
+      assets + '/_js/head.js',
       assets + '/_js/main.js',
     ],
   },
