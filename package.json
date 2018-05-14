@@ -1,22 +1,19 @@
 {
-  "name": "project-template",
+  "name": "website-project-template",
   "version": "0.2.0",
-  "description": "project-description",
+  "description": "Project description...",
   "private": true,
   "repository": {
     "type": "git",
     "url": ""
   },
   "scripts": {
-    "start": "gulp",
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "bundle exec gulp"
   },
   "author": "Ocupop",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^8.4.1",
+    "autoprefixer": "^8.5.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.4",
@@ -64,7 +61,7 @@
     "yargs": "^11.0.0"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.1.0",
     "jquery": "^3.2.1",
     "popper.js": "^1.14.1"
   }
