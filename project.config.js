@@ -121,10 +121,16 @@ module.exports = {
         },
         {
           test: require.resolve('jquery'),
-          use: [{
+          use: [
+            {
               loader: 'expose-loader',
               options: '$'
-          }]
+            },
+            {
+              loader: 'expose-loader',
+              options: 'jQuery'
+            }
+          ]
         }
       ],
     },
