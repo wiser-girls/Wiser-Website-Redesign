@@ -6,6 +6,18 @@ const dest        = '_site';
 const assets      = 'src/assets';
 
 module.exports = {
+  assets: assets,
+  publish: {
+    src: dest,
+    tasks: {
+      webpack:  true,
+      imagemin: true,
+      sass:     true,
+      jekyll:   true,
+    },
+    github: false,
+    firebase: true,
+  },
   tasks: {
     webpack:  true,
     imagemin: true,
@@ -15,9 +27,6 @@ module.exports = {
     watch:    true,
     // browsersync: true,
   },
-
-  assets: assets,
-  
   autoprefixer: {
     browsers: [
       '> 1%',
@@ -26,7 +35,6 @@ module.exports = {
     ],
     cascade: true,
   },
-
   browsersync: {
     port: 9999,
     server: {
@@ -50,7 +58,6 @@ module.exports = {
     cors: true,
     reloadOnRestart: true,
   },
-
   jekyll: {
     config: {
       default: '_config.yml',
@@ -77,7 +84,6 @@ module.exports = {
       assets + '/img/**/*',
     ]
   },
-
   sass: {
     src: assets + '/_scss/**/*.scss',
     dest: assets + '/css',
@@ -88,14 +94,12 @@ module.exports = {
       assets + '/_scss/**/*',
     ]
   },
-
   imagemin: {
     src: assets + '/_img/**/*',
     dest: assets + '/img',
     progressive: true,
     svgoPlugins: [{removeViewBox: false}],
   },
-
   js: {
     src: assets + '/_js/**/*.js',
     dest: assets + '/js',
@@ -104,7 +108,6 @@ module.exports = {
       assets + '/_js/main.js',
     ],
   },
-
   webpack: {
     mode: 'development',
     module: {
@@ -146,14 +149,12 @@ module.exports = {
       })
     ],
   },
-
   eslintLoader: {
     enforce: "pre",
     test: /\.js$/,
     exclude: /node_modules/,
     loader: "eslint-loader",
   },
-
   scsslint: {
     src: [
       assets + '/_scss/**/*.{sass,scss}'
