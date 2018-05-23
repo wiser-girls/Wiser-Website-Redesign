@@ -22,12 +22,12 @@ https://help.github.com/articles/duplicating-a-repository/
 
 Create a bare clone
 
-`git clone --bare git@bitbucket.org:ocupop/jekyll-project.git`
+`git clone --bare git@bitbucket.org:ocupop/website-project.git`
 
 Push mirror to new repository
 
 ```
-cd jekyll-project.git
+cd website-project.git
 git push --mirror git@bitbucket.org:ocupop/<repo-name>
 ```
 
@@ -35,6 +35,6 @@ Remove temporary local instance
 
 ``` 
 cd ../
-rm -rf jekyll-project.git
+rm -rf website-project.git
 git clone git@bitbucket.org:ocupop/<repo-name>
 ```
