@@ -12,6 +12,10 @@ This project uses Gulp, Webpack, Jekyll, React
 2. Start environment: `npm start`
 3. Navigate to [http://localhost:9999/](http://localhost:9999/)
 
+##Deploy to ghPages##
+1. `cd` to project directory
+2. Start environment: `npm run deploy`
+
 
 ============
 
@@ -22,7 +26,7 @@ https://help.github.com/articles/duplicating-a-repository/
 
 Create a bare clone
 
-`git clone --bare git@bitbucket.org:ocupop/website-project.git`
+`git clone --bare git@github.com:ocupop/website-project.git`
 
 Push mirror to new repository
 
