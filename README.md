@@ -22,7 +22,7 @@ https://help.github.com/articles/duplicating-a-repository/
 
 Create a bare clone
 
-`git clone --bare git@bitbucket.org:ocupop/website-project.git`
+`git clone --bare git@github.com:ocupop/website-project.git`
 
 Push mirror to new repository
 
