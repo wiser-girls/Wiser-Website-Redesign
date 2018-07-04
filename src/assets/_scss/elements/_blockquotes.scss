@@ -1,5 +1,5 @@
 blockquote {
-  color: $text-color;
+  color: $body-color;
   display: block;
   font-family: Georgia, serif;
   font-size: 32px;
@@ -10,7 +10,7 @@ blockquote {
   z-index: 1;
 
   &::before {
-    color: rgba($gray-darker, .1);
+    color: rgba($gray-700, .1);
     content: '\201C'; //Unicode for Left Double Quote
     display: block;
     font-family: Georgia, serif;
@@ -25,7 +25,7 @@ blockquote {
   }
 
   &::after {
-    color: rgba($gray-darker, .1);
+    color: rgba($gray-800, .1);
     content: '\201D'; //Unicode for Left Double Quote
     display: block;
 
@@ -42,12 +42,12 @@ blockquote {
   }
 
   a {
-    color: $brand-primary;
+    color: $primary;
     cursor: pointer;
     text-decoration: none;
 
     &:hover {
-      color: $gray-darker;
+      color: $gray-800;
     }
   }
 
