@@ -4,7 +4,7 @@ email: dev@ocupop.com
 description: ''
 url: "http://client_url.com"
 permalink: pretty
-analytics_code: UA-000000000-1 # accessible via dev@ocupop.com
+analytics_code:
 
 # Collections
 collections:

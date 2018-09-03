@@ -22,7 +22,7 @@ gulp.task('publish', publishTasks, function() {
 
   // Publish to Firebase
   if(config.publish.firebase) {
-    return shell.task([
+    shell.task([
       'firebase deploy'
     ]);
   }
