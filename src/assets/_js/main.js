@@ -5,8 +5,5 @@ import 'bootstrap';
 // import 'bootstrap/js/dist/dropdown';
 
 import App from './App';
+import { TimelineMax, CSSPlugin, ScrollToPlugin, Draggable } from "gsap/all";
 
-
-$(function() {
-  console.log('jQuery loaded');
-});
