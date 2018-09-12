@@ -9,9 +9,8 @@ _site
 # Logs
 *.log
 
-
 # Packages
 node_modules
 
-# TB
-notes.txt
+gemfile.lock
+package-lock.json
