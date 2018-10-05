@@ -1,10 +1,20 @@
 # Site settings
 title: Client Name
 email: dev@ocupop.com
-description: ''
 url: "http://client_url.com"
 permalink: pretty
+
+# Social sharing
+description:
+socialshare:
+  featured_image:
+  twitter:
+    username:
+    image:
+
+# Google Analytics
 analytics_code:
+
 
 # Collections
 collections:
@@ -29,7 +39,6 @@ source: src
 plugins:
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-lunr-js-search
 
 

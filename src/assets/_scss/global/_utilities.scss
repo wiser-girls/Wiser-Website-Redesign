@@ -1,6 +1,5 @@
 %clearfix {
   zoom: 1;
-
   &::before,
   &::after {
     content: '';
@@ -12,10 +11,8 @@
   }
 }
 
-// Global Spacing
 .content {
   position: relative;
-  padding: 20px;
   @extend %clearfix;
 }
 
@@ -53,3 +50,8 @@
   }
 }
 
+// Sticky behavior
+.sticky {
+  position: sticky;
+  top: 0;
+}
