@@ -47,3 +47,5 @@ plugins:
 #   description: Description of feed
 #   url: primary url
 #   path: alternate path
+
+placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder
