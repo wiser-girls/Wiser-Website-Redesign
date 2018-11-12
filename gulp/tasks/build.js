@@ -12,6 +12,6 @@ Object.keys(config.tasks).forEach(function (key) {
 
 gulp.task('build', function(callback) {
   // Run all tasks needed for a build in defined order
-  // TODO - Logic for seperating tasks inot groups
+  // TODO - Logic for seperating tasks into groups
   runSequence(tasks, callback);
 });

@@ -1,6 +1,5 @@
 const path        = require('path');
 const webpack     = require('webpack');
-const clientName  = '<Client Name>';
 const src         = 'src';
 const dest        = '_site';
 const assets      = 'src/assets';
@@ -10,22 +9,22 @@ module.exports = {
   publish: {
     src: dest,
     tasks: {
-      webpack:  true,
-      imagemin: true,
-      sass:     true,
-      jekyll:   true,
+      webpack:  false,
+      imagemin: false,
+      sass:     false,
+      jekyll:   false,
     },
     github: false,
-    firebase: true,
+    firebase: false,
   },
   tasks: {
     webpack:  true,
-    imagemin: true,
-    sass:     true,
-    jekyll:   true,
-    // eslint:   true,
-    watch:    true,
-    // browsersync: true,
+    imagemin: false,
+    sass:     false,
+    jekyll:   false,
+    eslint:   false,
+    watch:    false,
+    browsersync: false,
   },
   autoprefixer: {
     browsers: [
@@ -146,7 +145,8 @@ module.exports = {
         // In case you want to import plugins individually, you must also require them here:
         // Util: "exports-loader?Util!bootstrap/js/dist/util",
         // Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown",
-      })
+      }),
+      // new webpack.HotModuleReplacementPlugin()
     ],
   },
   eslintLoader: {

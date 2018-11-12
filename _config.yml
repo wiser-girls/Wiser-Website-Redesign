@@ -7,7 +7,7 @@ permalink: pretty
 # Social sharing
 description:
 socialshare:
-  featured_image:
+  featured_image: assets/img/socialshare.png
   twitter:
     username:
     image:
