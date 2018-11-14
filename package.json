@@ -55,6 +55,7 @@
     "react-hot-loader": "^4.4.0",
     "require-dir": "^1.1.0",
     "run-sequence": "^2.2.1",
+    "time-require": "^0.1.2",
     "vinyl-named": "^1.1.0",
     "webpack": "^4.25.1",
     "webpack-cli": "^2.0.13",

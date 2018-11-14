@@ -19,11 +19,11 @@ module.exports = {
   },
   tasks: {
     webpack:  true,
-    imagemin: false,
-    sass:     false,
-    jekyll:   false,
+    imagemin: true,
+    sass:     true,
+    jekyll:   true,
     eslint:   false,
-    watch:    false,
+    watch:    true,
     browsersync: false,
   },
   autoprefixer: {

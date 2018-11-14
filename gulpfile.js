@@ -1,5 +1,6 @@
 'use strict';
 const gulp       = require('gulp');
+const timeRequire = require('time-require');
 const requireDir = require('require-dir');
 
 // Require all tasks in gulp/tasks, including subfolders
