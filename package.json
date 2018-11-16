@@ -1,6 +1,6 @@
 {
-  "name": "website-project-template",
-  "version": "0.2.0",
+  "name": "jekyll-cloudcannon-template",
+  "version": "0.3.0",
   "description": "Project description...",
   "private": true,
   "repository": {

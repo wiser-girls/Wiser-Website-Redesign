@@ -1,6 +1,6 @@
 # Project Template #
 
-This project uses Gulp, Webpack, Jekyll, React
+This project uses Gulp, Webpack, Jekyll, React. It is meant for hosting on CLoudcannon, but it is possible to reconfigure for Firebase or GithubPages hosting.
 
 ## Getting Started ##
 1. Install Bundler: `gem install bundler`
