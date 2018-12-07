@@ -1,4 +1,4 @@
-# Project Template #
+# Jekyll/Cloudcannon Project Template #
 
 This project uses Gulp, Webpack, Jekyll, React. It is meant for hosting on CLoudcannon, but it is possible to reconfigure for Firebase or GithubPages hosting.
 
@@ -26,7 +26,7 @@ https://help.github.com/articles/duplicating-a-repository/
 
 Create a bare clone
 
-`git clone --bare git@github.com:ocupop/website-project.git`
+`git clone --bare git@github.com:ocupop/jekyll-cloudcannon.git`
 
 Push mirror to new repository
 
