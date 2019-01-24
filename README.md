@@ -31,7 +31,7 @@ Create a bare clone
 Push mirror to new repository
 
 ```
-cd website-project.git
+cd jekyll-cloudcannon.git
 git push --mirror git@bitbucket.org:ocupop/<repo-name>
 ```
 
@@ -39,6 +39,6 @@ Remove temporary local instance
 
 ``` 
 cd ../
-rm -rf website-project.git
+rm -rf jekyll-cloudcannon.git
 git clone git@bitbucket.org:ocupop/<repo-name>
 ```
