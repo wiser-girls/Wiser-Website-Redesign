@@ -1,9 +1,24 @@
-import 'bootstrap';
-// Alternatively we can import features individually.
-// Also make sure to update the project.config.js if you are going to take this approach
-// import 'bootstrap/js/dist/util';
-// import 'bootstrap/js/dist/dropdown';
+import App from "./App";
 
-import App from './App';
-import { TimelineMax, CSSPlugin, ScrollToPlugin, Draggable } from "gsap/all";
+// Example of dynamically loading cognito contact form in footer
+var controller = new ScrollMagic.Controller();
 
+var scene = new ScrollMagic.Scene({
+  triggerElement: "#example-contact-form",
+  duration: 200,
+  reverse: false
+})
+  .addTo(controller)
+
+  .on("enter", function(e) {
+    $.ajax({
+      url: "https://services.cognitoforms.com/s/bbN8iw1MJUqjPe6aHn-_rw",
+      dataType: "script",
+      cache: true,
+      success: function() {
+        // Callback
+        //console.log("script ready");
+        Cognito.load("forms", { id: "25" });
+      }
+    });
+  });
