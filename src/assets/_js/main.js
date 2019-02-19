@@ -9,7 +9,6 @@ var scene = new ScrollMagic.Scene({
   reverse: false
 })
   .addTo(controller)
-
   .on("enter", function(e) {
     $.ajax({
       url: "https://services.cognitoforms.com/s/bbN8iw1MJUqjPe6aHn-_rw",
@@ -17,7 +16,7 @@ var scene = new ScrollMagic.Scene({
       cache: true,
       success: function() {
         // Callback
-        //console.log("script ready");
+        console.log("script ready");
         Cognito.load("forms", { id: "25" });
       }
     });
