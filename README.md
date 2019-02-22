@@ -39,6 +39,6 @@ Remove temporary local instance
 
 ``` 
 cd ../
-rm -rf jekyll-cloudcannon.git
+cd
 git clone git@bitbucket.org:ocupop/<repo-name>
 ```
