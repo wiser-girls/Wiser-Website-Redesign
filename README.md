@@ -42,3 +42,10 @@ cd ../
 cd
 git clone git@bitbucket.org:ocupop/<repo-name>
 ```
+Update project name the following files
+.ruby-gemset
+config.yml
+package.json
+README.md
+
+update gitignore to include gemfile.lock
