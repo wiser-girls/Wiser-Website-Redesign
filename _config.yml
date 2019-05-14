@@ -24,7 +24,7 @@ collections:
     permalink: /examples/:path/
 
 # defaults:
-#   - 
+#   -
 #     scope:
 #       type: 'examples'
 #     values:
@@ -38,8 +38,10 @@ source: src
 
 plugins:
   - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-lunr-js-search
+  # - jekyll-feed
+  # - jekyll-lunr-js-search
+  # - jekyll-archives
+  # - jekyll-contentblocks
 
 
 # feed:

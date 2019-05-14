@@ -11,6 +11,3 @@ _site
 
 # Packages
 node_modules
-
-gemfile.lock
-package-lock.json

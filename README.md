@@ -37,7 +37,7 @@ git push --mirror git@bitbucket.org:ocupop/<repo-name>
 
 Remove temporary local instance
 
-``` 
+```
 cd ../
 cd
 git clone git@bitbucket.org:ocupop/<repo-name>
@@ -49,3 +49,5 @@ package.json
 README.md
 
 update gitignore to include gemfile.lock
+
+Update the project's README.
