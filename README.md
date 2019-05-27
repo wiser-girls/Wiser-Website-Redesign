@@ -1,11 +1,11 @@
-# Jekyll/Cloudcannon Project Template #
+# Jekyll/Cloudcannon Suite Project Template #
 
-This project uses Gulp, Webpack, Jekyll, React. It is meant for hosting on CLoudcannon, but it is possible to reconfigure for Firebase or GithubPages hosting.
+This project uses Gulp, Jekyll, Cloudcannon Suite. It is meant for hosting on Cloudcannon, but it is possible to reconfigure for Firebase or GithubPages hosting.
 
 ## Getting Started ##
-1. Install Bundler: `gem install bundler`
-2. Install dependencies: `bundle install`
-3. Install Node packages: `npm install`
+1. Install Node packages: `npm install`
+2. Install Gem Dependencies: `gulp dev:install`
+
 
 ## Daily Startup ##
 1. `cd` to project directory
@@ -47,7 +47,3 @@ Update project name the following files
 config.yml
 package.json
 README.md
-
-update gitignore to include gemfile.lock
-
-Update the project's README.

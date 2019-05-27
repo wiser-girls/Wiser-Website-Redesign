@@ -33,7 +33,6 @@ collections:
 
 # Build settings
 safe: false
-source: src
 
 
 plugins:
