@@ -47,3 +47,5 @@ Update project name the following files
 config.yml
 package.json
 README.md
+
+Generate favicon: https://favicon.io

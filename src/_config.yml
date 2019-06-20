@@ -7,7 +7,7 @@ permalink: pretty
 # Social sharing
 description:
 socialshare:
-  featured_image: assets/img/socialshare.png
+  featured_image: img/socialshare.png
   twitter:
     username:
     image:
@@ -33,20 +33,10 @@ collections:
 
 # Build settings
 safe: false
-
-
+sass:
+  # style: compressed
+  sass_dir: _scss
 plugins:
   - jekyll-sitemap
-  # - jekyll-feed
-  # - jekyll-lunr-js-search
-  # - jekyll-archives
-  # - jekyll-contentblocks
-
-
-# feed:
-#   title: Client Name
-#   description: Description of feed
-#   url: primary url
-#   path: alternate path
 
 placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder

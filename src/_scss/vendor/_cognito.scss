@@ -1,4 +1,3 @@
-
 // Preloader behavior for cognito form
 .preloader {
   display: none;
@@ -9,7 +8,7 @@
   }
 }
 
-/* Override the default invisibility if the preloader doesn't have a form after it. */
+// Override the default invisibility if the preloader doesn't have a form after it.
 .preloader:last-child {
-  display: block;
+  display: block !important;
 }
