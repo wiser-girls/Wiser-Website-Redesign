@@ -8,12 +8,25 @@
     "url": ""
   },
   "scripts": {
-    "start": "gulp dev"
+    "start": "gulp dev --require @babel/register --gulpfile tasks"
   },
   "author": "Ocupop",
   "license": "MIT",
   "dependencies": {
     "@cloudcannon/suite": "^2.0.0-rc5",
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.3",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "webpack": "^4.37.0",
+    "webpack-dev-middleware": "^3.7.0",
+    "webpack-hot-middleware": "^2.25.0"
   }
 }
