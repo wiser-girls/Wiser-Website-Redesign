@@ -3,7 +3,6 @@ import webpack from 'webpack'
 import process from 'process'
 
 const isProduction = (process.env.NODE_ENV === 'production')
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 let config = {
   mode: 'production',
@@ -12,45 +11,43 @@ let config = {
   // The package 'webpack-merge' can help with that.
   // This tenary setup is just for simplicity sake.
   entry: isProduction ? {
-    main: './index.js'
+    main: './_scripts/index.js'
   } : {
       main: [
-        './index.js',
+        './_scripts/index.js',
         'webpack/hot/dev-server',
         'webpack-hot-middleware/client'
       ]
     },
-
   output: {
-    filename: './js/bundle.js',
-    path: path.resolve(__dirname, '../scripts')
+    filename: './js/main.js',
+    path: path.resolve(__dirname, '../src')
 
   },
-
-  context: path.resolve(__dirname, '../scripts'),
-
-  resolve: {
-    extensions: ['.js', '.vue', '.json'],
-    alias: {
-      'vue$': 'vue/dist/vue.esm.js',
-    }
-  },
-
+  context: path.resolve(__dirname, '../src'),
   module: {
-    rules: [{
-      test: /\.vue$/,
-      loader: 'vue-loader'
-    }]
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react'
+            ]
+          }
+        }
+      }
+    ]
   },
-
   plugins: isProduction ? [
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
-    }),
-    new webpack.optimize.UglifyJsPlugin()
+    })
   ] : [
-      new webpack.HotModuleReplacementPlugin(),
-      new VueLoaderPlugin()
+      new webpack.HotModuleReplacementPlugin()
     ]
 }
 
