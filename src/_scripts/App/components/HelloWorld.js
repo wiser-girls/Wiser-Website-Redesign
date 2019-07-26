@@ -5,7 +5,7 @@ export default class HelloWorld extends Component {
     const { title } = this.props;
     return (
       <div>
-        <h1>Hello Blah!</h1>
+        <h1>Hello World!</h1>
         <p><strong>{title}</strong></p>
       </div>
     )
