@@ -52,7 +52,7 @@ let config = {
 }
 
 
-function scripts() {
+function buildScripts() {
 
   return new Promise(resolve => webpack(config, (err, stats) => {
 
@@ -64,4 +64,4 @@ function scripts() {
   }))
 }
 
-module.exports = { config, scripts }
+module.exports = { config, buildScripts }
