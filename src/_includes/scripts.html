@@ -1,19 +1,12 @@
-<!-- Javascript -->
+<!-- main js file-->
+<script src="{{ '/js/main.js' | prepend: site.baseurl }}" defer></script>
+
+<!-- Search -->
+{% include search.html %}
+
+<!-- JS Dependencies -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"
   defer></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"
   defer></script>
-<!-- gsap and scrollmagic -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" crossorigin="anonymous" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js" crossorigin="anonymous"
-  defer></script>
-<!-- animation plugin for using gsap with scrollmagic -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"
-  crossorigin="anonymous" defer></script>
-
- <!-- main js file-->
-<script src="{{ '/js/main.js' | prepend: site.baseurl }}" defer></script>
-
-<!-- Search -->
-{% include search.html %}
