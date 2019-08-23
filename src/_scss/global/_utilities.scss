@@ -32,6 +32,11 @@
   }
 }
 
+//Responsive Cards
+.responsive-card-deck {
+  @include make-responsive-cards();
+}
+
 // Background images
 .bg-image {
   display: block;
