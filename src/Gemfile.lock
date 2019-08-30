@@ -72,6 +72,7 @@ DEPENDENCIES
   jekyll
   jekyll-responsive-image
   jekyll-sitemap
+  rmagick
   sassc
   scss_lint
 
