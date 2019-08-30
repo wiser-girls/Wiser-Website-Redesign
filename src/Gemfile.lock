@@ -70,7 +70,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-responsive-image
+  jekyll-responsive-image (~> 1.0)
   jekyll-sitemap
   rmagick
   sassc
