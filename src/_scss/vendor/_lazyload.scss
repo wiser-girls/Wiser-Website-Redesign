@@ -20,3 +20,10 @@ transition: opacity 400ms;
 .fade-in.lazyloaded {
 opacity: 1;
 }
+
+#responsive-image {
+  img {
+    max-width:100%;
+    height: auto;
+  }
+}
