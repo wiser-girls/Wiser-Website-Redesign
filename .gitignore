@@ -2,6 +2,7 @@
 .sass-cache
 .bundle
 .jekyll-metadata
+.jekyll-cache
 
 # Site build & Distribution
 dist
@@ -9,9 +10,12 @@ dist
 # Logs
 *.log
 
+# Environment Variables
+.env
+
 # Packages
 node_modules
-
 vendor/**/*
 
+# Notes
 notes.txt
