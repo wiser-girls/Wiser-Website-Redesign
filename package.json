@@ -15,6 +15,7 @@
   "author": "Ocupop",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "lodash": "^4.17.15",
     "patch-package": "^6.1.2",
     "react": "^16.8.6",
@@ -25,9 +26,8 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.4.0",
-    "@cloudcannon/suite": "^2.0.0-rc5",
+    "@cloudcannon/suite": "^2.0.0-rc6",
     "babel-loader": "^8.0.6",
-    "babel-preset-vue": "^2.0.2",
     "gulp": "^4.0.0",
     "webpack": "^4.37.0",
     "webpack-cli": "^3.3.6",
