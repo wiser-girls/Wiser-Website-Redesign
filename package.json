@@ -10,7 +10,8 @@
   "scripts": {
     "start": "gulp dev",
     "scripts": "NODE_ENV=production gulp buildScripts",
-    "postinstall": "patch-package && gulp dev:install"
+    "postinstall": "patch-package && gulp dev:install",
+    "build": "jekyll build --config _config.yml,_config.production.yml"
   },
   "author": "Ocupop",
   "license": "MIT",

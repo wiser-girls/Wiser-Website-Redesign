@@ -1,6 +1,9 @@
+
+
+
 body {
-  background-color: $body-bg;
   color: $body-color;
+  background: url( $baseurl + "/img/test.png") no-repeat center top;
 }
 
 section {
