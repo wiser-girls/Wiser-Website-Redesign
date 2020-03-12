@@ -10,7 +10,7 @@
   "scripts": {
     "start": "gulp dev",
     "scripts": "NODE_ENV=production gulp buildScripts",
-    "postinstall": "patch-package && gulp dev:install",
+    "postinstall": "patch-package && gulp dev:install"
   },
   "author": "Ocupop",
   "license": "MIT",
