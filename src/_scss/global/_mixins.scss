@@ -1,8 +1,8 @@
-@mixin transition($duration: .3s, $property: all, $effect: ease-in-out) {
+@mixin transition($duration: 0.3s, $property: all, $effect: ease-in-out) {
   transition: $property $duration $effect;
 }
 
-@mixin animation($effect: fadeIn, $duration: .5s, $delay: 0s) {
+@mixin animation($effect: fadeIn, $duration: 0.5s, $delay: 0s) {
   animation-name: $effect;
   animation-duration: $duration;
   animation-fill-mode: both;
@@ -11,12 +11,12 @@
 
 @mixin make-responsive-cards($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
   // Common properties for all breakpoints
- 
   display: flex;
   flex-flow: row wrap;
-  margin-right: $gutter / 2;
-  margin-left: $gutter / 2;
-  
+  margin-right: -$gutter / 2;
+  margin-left: -$gutter / 2;
+
+  // @extend %card-wrapper;
   @each $breakpoint in map-keys($breakpoints) {
     $infix: breakpoint-infix($breakpoint, $breakpoints);
     .card {
@@ -29,12 +29,71 @@
       @for $i from 1 through $columns {
         &.cards#{$infix}-#{$i} {
           .card {
-            flex: 0 0 calc(#{100/$i}% - #{$grid-gutter-width});
+            flex: 0 0 calc(#{100 / $i}% - #{$grid-gutter-width});
             margin-left: $gutter / 2;
             margin-right: $gutter / 2;
           }
         }
       }
     }
+  }
+}
+
+@mixin gradient-variant($parent, $color) {
+  #{$parent} {
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 10vw;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      z-index: 100;
+    }
+    &.gradient-up {
+      &::before {
+        top: -10vw;
+        background: linear-gradient(
+          0deg,
+          rgba($color, 1) 0%,
+          rgba($color, 1) 5%,
+          rgba($color, 0) 95%,
+          rgba($color, 0) 100%
+        );
+      }
+    }
+    &.gradient-down {
+      &::after {
+        bottom: -10vw;
+        background: linear-gradient(
+          180deg,
+          rgba($color, 1) 0%,
+          rgba($color, 1) 5%,
+          rgba($color, 0) 95%,
+          rgba($color, 0) 100%
+        );
+      }
+    }
+    // TODO: Add left and right if necessary?
+  }
+}
+
+@mixin curved-variant($parent, $color) {
+  #{$parent} {
+    position: relative;
+    // background-image: url("/img/swell.svg");
+    // background-color: transparent;
+    // background-size: 200%;
+    // background-position: 2% 95%;
+    // background-repeat: no-repeat;
+    // height: 10vw;
+    // width: 100%;
+    // &.curved-inset {
+    // }
   }
 }

@@ -1,15 +1,10 @@
-const gulp = require("gulp");
-const suite = require('@cloudcannon/suite');
-const { buildScripts } = require('./tasks/webpack');
+const gulp = require("gulp")
+const suite = require('@cloudcannon/suite')
+const { scripts } = require('./tasks/scripts')
 
+suite.dev(gulp)
 
-suite.dev(gulp);
+gulp.task('default', gulp.parallel('scripts', 'dev'));
 
-// function hello(cb) {
-//   console.log('hello from gulp');
-//   cb();
-// }
-// exports.hello = hello;
-
-exports.buildScripts = buildScripts;
+exports.scripts = scripts
 
