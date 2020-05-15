@@ -1,19 +1,10 @@
 const gulp = require("gulp")
 const suite = require('@cloudcannon/suite')
-
 const { scripts } = require('./tasks/scripts')
-
-// suite.dev(gulp, {
-//   tasks: [scripts]
-// })
 
 suite.dev(gulp)
 
-// function hello(cb) {
-//   console.log('hello from gulp');
-//   cb();
-// }
-// exports.hello = hello;
+gulp.task('default', gulp.parallel('scripts', 'dev'));
 
-// exports.scripts = scripts
+exports.scripts = scripts
 

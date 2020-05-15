@@ -1,4 +1,5 @@
 .DS-Store
+.DS_Store
 .sass-cache
 .bundle
 .jekyll-metadata
@@ -12,6 +13,7 @@ dist
 
 # Environment Variables
 .env
+.env.*
 
 # Packages
 node_modules

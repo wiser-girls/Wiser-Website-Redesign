@@ -3,7 +3,7 @@ import path from 'path'
 let webpackConfig = {
   mode: "production",
   watch: true,
-  entry: './src/_scripts/index.js',
+  entry: './scripts/index.js',
   output: {
     filename: './js/main.js',
     path: path.resolve(__dirname, '../src')
