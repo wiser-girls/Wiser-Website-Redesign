@@ -1,33 +1,19 @@
-import React, { Component } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 
-export default class HelloWorld extends Component {
-  render() {
-    const { title } = this.props;
-    return (
-      <div>
-        <h1>Hello World!</h1>
-        <p><strong>{title}</strong></p>
-      </div>
-    )
-  }
+const HelloWorld = ({ title }) => {
+  return (
+    <>
+      <h1>Hello Ocupop!</h1>
+      <p><strong>{title}</strong></p>
+    </>
+  )
 }
 
-// import React from 'react'
-// import PropTypes from 'prop-types'
+HelloWorld.propTypes = {
+  title: PropTypes.string
+}
 
-// const HelloWorld = ({ title }) => {
-//   return (
-//     <>
-//       <h1>Hello World!</h1>
-//       <p><strong>{title}</strong></p>
-//     </>
-//   )
-// }
-
-// HelloWorld.propTypes = {
-//   title: PropTypes.string
-// }
-
-// export default HelloWorld
+export default HelloWorld
 
 
