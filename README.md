@@ -17,29 +17,6 @@ This project uses Gulp, Jekyll, Cloudcannon Suite. It is meant for hosting on Cl
 
 ============
 
-### Mirror this template: ###
-New repository must be created prior
-
-https://help.github.com/articles/duplicating-a-repository/
-
-Create a bare clone
-
-`git clone --bare git@github.com:ocupop/jekyll-cloudcannon.git`
-
-Push mirror to new repository
-
-```
-cd jekyll-cloudcannon.git
-git push --mirror git@bitbucket.org:ocupop/<repo-name>
-```
-
-Remove temporary local instance
-
-```
-cd ../
-cd
-git clone git@bitbucket.org:ocupop/<repo-name>
-```
 Update project name the following files
 .ruby-gemset
 config.yml

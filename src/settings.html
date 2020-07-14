@@ -1,0 +1,38 @@
+---
+layout: page
+title: Project Settings
+---
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h5>General</h5>
+        <p>
+          <strong>Client:</strong> {{ site.client | default: 'incomplete' }}<br />
+          <strong>Project Title:</strong> {{ site.title | default: 'incomplete' }}<br />
+          <strong>Analytics:</strong> {{ site.analytics.default | default: 'incomplete' }}<br />
+          <strong>Permalink Pattern:</strong> {{ site.permalink | default: 'incomplete' }}<br />
+          <strong>Plugins:</strong> {{ site.plugins | default: 'incomplete' }}<br />
+        </p>
+        <hr>
+        <h5>Social Sharing</h5>
+        <p>
+          <strong>Description:</strong><br />
+          {{ site.description | default: 'incomplete' }}
+        </p>
+        <p>
+          <strong>Default Share Image:</strong><br />
+          <img
+            src="{{ site.socialshare.featured_image | default: 'https://via.placeholder.com/1280x630/333333/000000?text=incomplete' }}"
+            alt="{{ site.socialshare.featured_image | default: 'incomplete' }}" class="img-fluid">
+        </p>
+        <p>
+          <strong>Twitter:</strong> {{ site.socialshare.twitter.username | default: 'incomplete' }}<br />
+          <img
+            src="{{ site.socialshare.twitter.image | default: 'https://via.placeholder.com/1280x630/333333/000000?text=incomplete' }}"
+            alt="{{ site.socialshare.twitter.image | default: 'incomplete' }}" class="img-fluid">
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
