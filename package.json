@@ -8,10 +8,10 @@
     "url": ""
   },
   "scripts": {
-    "start": "gulp dev",
+    "start": "cd src && jekyll serve --watch",
     "dev": "concurrently 'npm:watch-scripts' 'npm:start' ",
     "watch-scripts": "gulp scripts",
-    "postinstall": "gulp dev:install"
+    "postinstall": "cd src && bundle install"
   },
   "author": "Ocupop",
   "license": "MIT",
@@ -28,7 +28,6 @@
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "@babel/register": "^7.9.0",
-    "@cloudcannon/suite": "2.0.0-rc7",
     "babel-loader": "^8.1.0",
     "gulp": "^4.0.2",
     "patch-package": "^6.2.2",

@@ -7,6 +7,7 @@
 
 # Site build & Distribution
 dist
+_site
 
 # Logs
 *.log
