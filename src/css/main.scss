@@ -19,4 +19,22 @@
 @import "vendor/bootstrap";
 @import "vendor/cognito";
 
-
+#donate_button{
+    color: #fff;
+    padding:10px 18px;
+    border-radius:5px;
+    text-decoration:none;
+    background-color:#9E9E23;
+  }
+//   #donate_button:hover{
+//     color: orange; 
+//   }
+#mainnav{
+    font-size: 14px;
+}
+#sub-footer{
+    background-color: #343A40;
+}
+#pageFooter{
+    background-color: #1E1E1E;
+}
