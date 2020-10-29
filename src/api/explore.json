@@ -13,3 +13,4 @@ permalink: api/explore
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
+
