@@ -78,7 +78,7 @@ i {
 }
 a:hover{
     text-decoration:none;
-    color: white;
+    // color: white;
 }
 #sub-footer{
     background-color: #343A40;
@@ -120,7 +120,10 @@ a:hover{
       left: 50%;
       transform: translate(-50%, -50%);
     }
-
+.link {
+    text-decoration: none;
+    font-size: 18px !important;
+}
 
 
 /*blog*/
