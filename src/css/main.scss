@@ -166,11 +166,36 @@ button{
     background-attachment: fixed;
 }
 
-
+/*who we are*/
 .who_we_are{
   font-weight: 700;
   color: #222E61;
 }
+
+
+.profile{
+ background-color: #222E61;
+ border-radius:5px;
+}
+
+.card-header, .card-link,.card-link:hover{background-color:#812990;text-align:left;color:white;}
+.card-body{padding:10px 10px;}
+.arrow{position:absolute;top:5px;right:20px;font-size:20px;color:white;
+-webkit-animation: minus 0.5s;}
+
+@keyframes minus {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+[aria-expanded="false"] > .expanded, [aria-expanded="true"] > .collapsed {display: none;}
+
+
+/*end of who we are*/
 
     .teal-bg {
         background-color: #B9E4EB;
