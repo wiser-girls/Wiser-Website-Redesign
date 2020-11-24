@@ -62,3 +62,18 @@ $(document).ready(function(){
 });
 
 
+
+
+
+$(document).ready(function(){
+   $(".learnMore").click(function(){
+      $(this).prev().toggle();
+      $(this).siblings('.stop').toggle();
+      if($(this).text()=='learn more'){
+	$(this).text('learn more');
+      }
+      else{
+	$(this).text('learn more');
+      }
+   });
+});
