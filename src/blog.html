@@ -1,0 +1,11 @@
+---
+layout: page
+title: blog page 
+---
+<section class="editable">
+    {% for post in site.posts %}
+    <div class=" editable">
+        {{ post }}
+    </div>
+    {% endfor %}
+</section>
