@@ -1,7 +1,6 @@
 ---
 layout: posts
 title: graduation1
-image: /img/news_updates_one.png
 ---
 
 ![](/uploads/wiser-graduation.png){: width="1024" height="683"}

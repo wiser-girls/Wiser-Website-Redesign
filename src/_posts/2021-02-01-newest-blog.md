@@ -1,7 +1,6 @@
 ---
 layout: posts
 title: Newest blog
-image: /img/news_updates_one.png
 ---
 
 ![](/uploads/news-updates-one-3.png){: width="1024" height="390"}

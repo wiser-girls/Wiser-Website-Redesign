@@ -1,7 +1,6 @@
 ---
 layout: posts
 title: blog with caption
-image: /img/news_updates_one.png
 ---
 
 ![](/uploads/covid-19.png){: width="1024" height="683"}
