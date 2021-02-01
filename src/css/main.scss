@@ -161,6 +161,10 @@ hr{
 .post h2 {
     color: #222E61;
 }
+.post img {
+    width: 100%;
+    height: auto;
+}
 
 .post:not(:last-child){
    margin-bottom: 30px;
