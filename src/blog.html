@@ -2,10 +2,10 @@
 layout: page
 title: blog page 
 ---
-<section class="editable">
-    {% for post in site.posts %}
+{% for post in site.posts %}
+<section class="editable ">
     <div class=" editable">
         {{ post }}
     </div>
-    {% endfor %}
 </section>
+{% endfor %}
