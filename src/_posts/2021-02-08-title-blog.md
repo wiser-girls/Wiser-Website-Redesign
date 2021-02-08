@@ -14,4 +14,4 @@ The content for my post is here. Lorem Ipsum is simply dummy text of the printin
 1. one
 2. two
 
-> The content for my post is here. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+> "The content for my post is here. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
