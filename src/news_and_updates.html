@@ -309,6 +309,16 @@ title: News and Updates
       </div>
   </div>
 </section>
+
+{% for post in site.posts %}
+<section class="editable ">
+    <div class=" editable">
+        {{ post }}
+    </div>
+</section>
+{% endfor %}
+
+<!-- blog title section should remain commented out  -->
 <!-- <section >
   <div class="container editable">
     <div>
@@ -321,7 +331,7 @@ title: News and Updates
   </div>
 </section> -->
 
-<section class="editable">
+<!-- <section class="editable">
   <div class="container  editable"> 
     <div class="row justify-content-center">
       <div class="col-10 post">
@@ -547,4 +557,4 @@ title: News and Updates
       </div>
    </div>  
   </div> 
-</section>
+</section> -->
