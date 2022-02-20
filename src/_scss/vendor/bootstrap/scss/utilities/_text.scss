@@ -103,6 +103,10 @@
 
 // Misc
 
+.text-align-center {
+  text-align: center !important;
+}
+
 .text-hide {
   @include text-hide($ignore-warning: true);
 }
