@@ -20,7 +20,8 @@
     "concurrently": "^5.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "remixicon": "^2.4.0"
+    "remixicon": "^2.4.0",
+    "yarn": "^1.22.17"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
