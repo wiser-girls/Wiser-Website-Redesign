@@ -2,6 +2,14 @@
 layout: page
 title: News and Updates
 ---
+{% for post in site.posts %}
+<section class="editable ">
+    <div class=" editable">
+        {{ post }}
+    </div>
+</section>
+{% endfor %}
+
 <section class="editable">
   <div class="container pt-5 editable"> 
   	<div class="shadow-sm bg-white rounded">
@@ -275,13 +283,7 @@ title: News and Updates
   </div> 
 </section>
 
-{% for post in site.posts %}
-<section class="editable ">
-    <div class=" editable">
-        {{ post }}
-    </div>
-</section>
-{% endfor %}
+
 
 <section class=" pr-5 pl-5 pb-5 py-0 bg-light editable">
   <div class="pt-5 pb-5 container">
