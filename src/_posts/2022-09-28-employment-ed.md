@@ -51,7 +51,7 @@
 		}
 
 		.bee-row-content {
-			max-width: 505px;
+			max-width: 1080px;
 			margin: 0 auto;
 			display: flex
 		}
@@ -78,7 +78,7 @@
 			overflow-wrap: anywhere
 		}
 
-		@media (max-width:525px) {
+		@media (max-width:1080px) {
 			.bee-row-content:not(.no_stack) {
 				display: block
 			}
