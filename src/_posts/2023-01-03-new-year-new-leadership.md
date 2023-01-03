@@ -18,11 +18,7 @@ While celebrating our changes in leadership, we also invite you to welcome Seth 
 
 He currently serves as an Associate General Counsel at Amazon.
 
-&nbsp;
-
 Please join us welcoming Michael and Seth by [**making a donation**](https://wisergirls.org/ways_to_donate){: target="_blank"} and showing your support for WISER’s new leadership\! Your financial support helps us accomplish our important work for the hardest to reach girls, and your donation today will help usher in an exciting new chapter for the organization. You can also send your congratulations to Michael and Seth by posting on WISER’s [**Facebook**](https://www.facebook.com/WISERGirlsKenya){: target="_blank"}, [**Instagram**](https://www.instagram.com/wiser_international){: target="_blank"}, [Twitter](https://twitter.com/WISERGirls_Intl), or [LinkedIn](https://www.linkedin.com/company/wiserinternational) pages.
-
-&nbsp;
 
 We thank you all for your continued support and partnership as we welcome Michael and Seth into their new roles. May we continue *growing and empowering girls* together\!
 
