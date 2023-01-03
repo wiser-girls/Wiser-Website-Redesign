@@ -4,7 +4,7 @@ title: New Year, New Leadership
 ---
 WELCOME\!
 
-As 2023 begins, the WISER board and dtaff are excited to announce new changes of our own.
+As 2023 begins, the WISER board and staff are excited to announce new changes of our own.
 
 Join us as we welcome Michael Carson as our new executive director.
 
